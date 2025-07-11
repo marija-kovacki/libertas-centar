@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Libertas - Centar stranih jezika</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Libertas - Centar stranih jezika" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/src/img1.JPG" />
+    <meta
+      property="og:description"
+      content="Centar stranih jezika. Iskoristite priliku da naučite engleski ili španski jezik u Zrenjaninu."
+    />
+    <meta property="og:url" content="https://www.centarlibertas.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon-16x16.png" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBBGYWZLTR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-KBBGYWZLTR')
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logos">
+        <a href="/"><img src="/src/logo.png" class="l-logo" alt="logo" /></a>
+        <img src="/src/cambr-new.png" class="cam-logo" alt="cambridge prepare logo" />
+      </div>
+      <div id="hamburgerToggle" class="l-hamburger">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 20 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 11H19M1 6H19M1 1H19"
+            stroke="#232931"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <nav class="nav-desktop">
+        <a href="/">Početna</a>
+        <a href="index.html#aboutUs">O nama</a>
+        <a href="index.html#gallery">Galerija</a>
+        <a href="index.html#courses">Kursevi</a>
+        <a href="intex.html#reviews">Utisci</a>
+        <a href="news.html">Novosti</a>
+        <a href="test.html" class="new-section">Testirajte svoje znanje <span>novo</span></a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+      <div id="mobileSidebar" class="nav-mobile">
+        <a href="/">Početna</a>
+        <a href="index.html#aboutUs">O nama</a>
+        <a href="index.html#gallery">Galerija</a>
+        <a href="index.html#courses">Kursevi</a>
+        <a href="intex.html#reviews">Utisci</a>
+        <a href="news.html">Novosti</a>
+        <a href="test.html" class="new-section">Testirajte svoje znanje</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+      <div id="overlay" class="dark-overlay"></div>
+    </header>
+
+    <section class="l-quiz">
+      <div id="introText" class="intro-text">
+        <h2>Dobrodošli na brzi test znanja iz engleskog jezika!</h2>
+        <p>
+          Odgovorite na 50 pitanja i saznajte koji je vaš približan nivo znanja – od A1 do C1.
+          <br />
+          Srećno! 🍀
+        </p>
+        <span class="l-time">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 0C18.9782 0 22.7936 1.58035 25.6066 4.3934C28.4196 7.20644 30 11.0218 30 15C30 18.9782 28.4196 22.7936 25.6066 25.6066C22.7936 28.4196 18.9782 30 15 30C11.0218 30 7.20644 28.4196 4.3934 25.6066C1.58035 22.7936 0 18.9782 0 15C0 11.0218 1.58035 7.20644 4.3934 4.3934C7.20644 1.58035 11.0218 0 15 0ZM13.5938 7.03125V15C13.5938 15.4688 13.8281 15.9082 14.2207 16.1719L19.8457 19.9219C20.4902 20.3555 21.3633 20.1797 21.7969 19.5293C22.2305 18.8789 22.0547 18.0117 21.4043 17.5781L16.4062 14.25V7.03125C16.4062 6.25195 15.7793 5.625 15 5.625C14.2207 5.625 13.5938 6.25195 13.5938 7.03125Z"
+              fill="#4f6aa5"
+            />
+          </svg>
+
+          2.5'</span
+        >
+      </div>
+      <div id="quiz-container" class="quiz-wrapper">
+        <div id="question-text"></div>
+        <div id="options-container"></div>
+      </div>
+      <div id="result" class="test-result" style="display: none"></div>
+    </section>
+
+    <div id="overlay" class="dark-overlay"></div>
+
+    <footer id="contact">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/src/logo.png" alt="logo" />
+        </div>
+        <div>
+          <p class="footer-title">Brzi linkovi:</p>
+          <p><a href="index.html#aboutUs">O nama</a></p>
+          <p><a href="index.html#courses">Kursevi</a></p>
+          <p><a href="index.html#reviews">Utisci</a></p>
+        </div>
+        <div class="footer-contacts">
+          <p class="footer-title">Kontakt:</p>
+          <div class="sm-icons">
+            <a
+              href="https://www.facebook.com/Libertascentrum/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 10C20 4.48 15.52 0 10 0C4.48 0 0 4.48 0 10C0 14.84 3.44 18.87 8 19.8V13H6V10H8V7.5C8 5.57 9.57 4 11.5 4H14V7H12C11.45 7 11 7.45 11 8V10H14V13H11V19.95C16.05 19.45 20 15.19 20 10Z"
+                    fill="#F3F3F3"
+                  />
+                </svg>
+              </span>
+            </a>
+            <a
+              href="https://www.instagram.com/centar.libertas/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.028 0C12.153 0.003 12.724 0.009 13.217 0.023L13.411 0.03C13.635 0.038 13.856 0.0479999 14.123 0.0599999C15.187 0.11 15.913 0.278 16.55 0.525C17.21 0.779 17.766 1.123 18.322 1.678C18.8307 2.17773 19.2242 2.78247 19.475 3.45C19.722 4.087 19.89 4.813 19.94 5.878C19.952 6.144 19.962 6.365 19.97 6.59L19.976 6.784C19.991 7.276 19.997 7.847 19.999 8.972L20 9.718V11.028C20.0025 11.7574 19.9948 12.4868 19.977 13.216L19.971 13.41C19.963 13.635 19.953 13.856 19.941 14.122C19.891 15.187 19.721 15.912 19.475 16.55C19.2242 17.2175 18.8307 17.8223 18.322 18.322C17.8223 18.8307 17.2175 19.2242 16.55 19.475C15.913 19.722 15.187 19.89 14.123 19.94L13.411 19.97L13.217 19.976C12.724 19.99 12.153 19.997 11.028 19.999L10.282 20H8.97302C8.24328 20.0026 7.51354 19.9949 6.78402 19.977L6.59002 19.971C6.35263 19.962 6.11529 19.9517 5.87802 19.94C4.81402 19.89 4.08802 19.722 3.45002 19.475C2.78285 19.2241 2.17846 18.8306 1.67902 18.322C1.16996 17.8224 0.776128 17.2176 0.52502 16.55C0.27802 15.913 0.110019 15.187 0.0600194 14.122L0.0300195 13.41L0.0250196 13.216C0.00658562 12.4868 -0.00174861 11.7574 1.94806e-05 11.028V8.972C-0.00274841 8.2426 0.0045857 7.5132 0.0220196 6.784L0.0290195 6.59C0.0370195 6.365 0.0470195 6.144 0.0590195 5.878C0.109019 4.813 0.277019 4.088 0.524019 3.45C0.775714 2.7822 1.17024 2.17744 1.68002 1.678C2.17917 1.16955 2.78321 0.776074 3.45002 0.525C4.08802 0.278 4.81302 0.11 5.87802 0.0599999C6.14402 0.0479999 6.36602 0.038 6.59002 0.03L6.78402 0.0239999C7.51321 0.00623271 8.24261 -0.0014347 8.97202 0.000999928L11.028 0ZM10 5C8.67394 5 7.40217 5.52678 6.46449 6.46447C5.5268 7.40215 5.00002 8.67392 5.00002 10C5.00002 11.3261 5.5268 12.5979 6.46449 13.5355C7.40217 14.4732 8.67394 15 10 15C11.3261 15 12.5979 14.4732 13.5356 13.5355C14.4732 12.5979 15 11.3261 15 10C15 8.67392 14.4732 7.40215 13.5356 6.46447C12.5979 5.52678 11.3261 5 10 5ZM10 7C10.394 6.99993 10.7841 7.07747 11.1481 7.22817C11.5121 7.37887 11.8429 7.5998 12.1215 7.87833C12.4001 8.15686 12.6211 8.48754 12.772 8.85149C12.9228 9.21544 13.0005 9.60553 13.0005 9.9995C13.0006 10.3935 12.9231 10.7836 12.7723 11.1476C12.6216 11.5116 12.4007 11.8423 12.1222 12.121C11.8437 12.3996 11.513 12.6206 11.149 12.7714C10.7851 12.9223 10.395 12.9999 10.001 13C9.20537 13 8.44231 12.6839 7.8797 12.1213C7.31709 11.5587 7.00102 10.7956 7.00102 10C7.00102 9.20435 7.31709 8.44129 7.8797 7.87868C8.44231 7.31607 9.20537 7 10.001 7M15.251 3.5C14.9195 3.5 14.6016 3.6317 14.3671 3.86612C14.1327 4.10054 14.001 4.41848 14.001 4.75C14.001 5.08152 14.1327 5.39946 14.3671 5.63388C14.6016 5.8683 14.9195 6 15.251 6C15.5825 6 15.9005 5.8683 16.1349 5.63388C16.3693 5.39946 16.501 5.08152 16.501 4.75C16.501 4.41848 16.3693 4.10054 16.1349 3.86612C15.9005 3.6317 15.5825 3.5 15.251 3.5Z"
+                    fill="#F3F3F3"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+          <p>
+            <svg
+              width="16"
+              height="20"
+              viewBox="0 0 16 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 0C3.8 0 0 3.22 0 8.2C0 11.38 2.45 15.12 7.34 19.43C7.72 19.76 8.29 19.76 8.67 19.43C13.55 15.12 16 11.38 16 8.2C16 3.22 12.2 0 8 0ZM8 10C6.9 10 6 9.1 6 8C6 6.9 6.9 6 8 6C9.1 6 10 6.9 10 8C10 9.1 9.1 10 8 10Z"
+                fill="#F3F3F3"
+              />
+            </svg>
+            <span> Koče Kolarova 29, Zrenjanin </span>
+          </p>
+          <p>
+            <svg
+              width="19"
+              height="19"
+              viewBox="0 0 19 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 3.90401e-08C7.17928 -5.00497e-05 7.35528 0.0480988 7.50957 0.139406C7.66386 0.230713 7.79077 0.36182 7.877 0.519L7.928 0.629L9.928 5.629C10.0086 5.83016 10.0216 6.05204 9.96513 6.26125C9.90868 6.47045 9.78581 6.65566 9.615 6.789L9.515 6.857L7.841 7.861L7.904 7.964C8.70076 9.22899 9.77101 10.2992 11.036 11.096L11.138 11.158L12.143 9.486C12.2544 9.30008 12.4231 9.15538 12.6239 9.07368C12.8246 8.99198 13.0464 8.9777 13.256 9.033L13.371 9.072L18.371 11.072C18.5375 11.1384 18.6831 11.2484 18.7925 11.3903C18.9019 11.5323 18.9712 11.7011 18.993 11.879L19 12V16C19 17.657 17.657 19 15.94 18.998C7.361 18.477 0.522 11.638 4.66045e-09 3C-4.26217e-05 2.23479 0.292325 1.49849 0.817284 0.941739C1.34224 0.384993 2.06011 0.0498925 2.824 0.00500015L3 3.90401e-08H7Z"
+                fill="#F3F3F3"
+              />
+            </svg>
+            <a href="tel:+381-063-549-585">+381-063-549-585</a>
+          </p>
+          <p>
+            <svg
+              width="20"
+              height="16"
+              viewBox="0 0 20 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 3.53503V13C20 13.7652 19.7077 14.5015 19.1827 15.0583C18.6578 15.615 17.9399 15.9501 17.176 15.995L17 16H3C2.23479 16.0001 1.49849 15.7077 0.941739 15.1828C0.384993 14.6578 0.0498925 13.9399 0.00500011 13.176L0 13V3.53503L9.445 9.83203L9.561 9.89803C9.69771 9.96483 9.84785 9.99955 10 9.99955C10.1522 9.99955 10.3023 9.96483 10.439 9.89803L10.555 9.83203L20 3.53503Z"
+                fill="#F3F3F3"
+              />
+              <path
+                d="M17 0C18.08 0 19.027 0.57 19.555 1.427L10 7.797L0.445007 1.427C0.6958 1.01982 1.0403 0.6785 1.44978 0.431489C1.85926 0.184479 2.32186 0.0389373 2.79901 0.00699997L3.00001 0H17Z"
+                fill="#F3F3F3"
+              />
+            </svg>
+            <a href="mailto:centarlibertas@gmail.com">centarlibertas@gmail.com</a>
+          </p>
+        </div>
+        <div class="open-hours">
+          <p class="footer-title">
+            Radno vreme: <br />
+            <span class="l-small-text">(uz unapred zakazane termine)</span>
+          </p>
+          <p>Ponedeljak - Petak: 09:00 - 21:00</p>
+          <p>Subota: 09:00 - 14:00</p>
+          <p>Nedelja: Ne radimo</p>
+        </div>
+      </div>
+      <hr />
+      <p class="footer-signature">
+        © 2025 <span class="l-span">Libertas</span>. All rights reserved.
+      </p>
+    </footer>
+
+    <script type="module" src="/src/enTest.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
