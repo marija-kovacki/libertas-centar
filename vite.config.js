@@ -7,6 +7,7 @@ export default defineConfig({
         main: 'index.html',
         about: 'news.html',
         testKnowledge: 'test.html',
+        wordleGame: 'wordle.html',
       },
     },
   },
