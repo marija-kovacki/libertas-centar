@@ -858,3 +858,10 @@ section.l-quiz .l-time {
     flex: 1 1 100%;
   }
 }
+
+/* Developers signature */
+.m-signature {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
